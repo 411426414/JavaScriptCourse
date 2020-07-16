@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>时间日期篇--距离某天时间</title>
+</head>
+
+<body style="background:#fef4d2">
+<div style="text-align: center">
+    <h2 style="color:#FF00FF">
+        <b>时间日期篇--距离某天时间</b>
+    </h2>
+    <hr style="width:300px">
+
+    <form action="" onchange="showclock()">
+        <input type="date" name="date" id="date">
+    </form>
+    <h2 id="clock"></h2>
+    
+    <script type="text/javascript">
+        function showclock(){
+            var date = document.getElementById("date").value;
+            var BirthDay = new Date(date);
+            var today = new Date();
+            // alert(today.getFullYear() >= BirthDay.getFullYear() || today.getDate() >= BirthDay.getDate() || today.getMonth() < BirthDay.getMonth())
+            // if(){
+            //     document.getElementById('clock').innerHTML = "日期选择错误!";
+            //     return;
+            // }
+            var timeold = (today.getTime()-BirthDay.getTime());
+            var sectimeold = timeold/1000
+            var Secondsold = Math.floor(sectimeold);
+            var msPerDay = 24*60*60*1000
+            var e_Day = timeold/msPerDay
+            var Day = Math.floor(e_Day);
+            var e_Hours = (e_Day-Day)*24;
+            var Hours = Math.floor(e_Hours);
+            var e_Minutes = (e_Hours-Hours)*60;
+            var Minutes = Math.floor((e_Hours-Hours)*60);
+            var Seconds = Math.floor((e_Minutes-Minutes)*60);
+
+            document.getElementById('clock').innerHTML = "从"+date+"的0点0分0秒开始<br/>已经过去了"+Day+"天"+Hours+"小时"+Minutes+"分"+Seconds+"秒啦!";
+            // setTimeout("showclock()", 1000)
+        }
+    </script>
+</div>
+</body>
+</html>
