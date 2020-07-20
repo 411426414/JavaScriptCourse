@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1.数据类型</title>
+</head>
+<body>
+    <!--
+        1.分类
+            基本(值)类型
+                String:任意字符串
+                Number: 任意的数字
+                Boolean: true/false
+                undefined: undefined
+                null: null
+            对象(引用)类型
+                Object：任意对象
+                Function：一种特殊的对象（可以执行）
+                Array：一种特殊的对象（数值下标）
+        2.判断
+            typeof
+            instanceof
+            ===
+     -->
+     <script type="text/javascript">
+        //  基本数据
+        //  typeof返回数据类型的字符串表达
+        var a;
+        console.log(a, typeof a) //  undefined, "undefined"
+
+        // 对象
+        var obj ={
+            name: 'Tom',
+            age: 18
+        }
+        function fn(){
+            var a = 3;
+        }
+        var array = [3, 'arr']
+        console.log(array[0])
+
+     </script>
+</body>
+</html>
