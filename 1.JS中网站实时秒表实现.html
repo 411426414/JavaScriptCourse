@@ -4,8 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS中网站实时秒表实现</title>
+    <style>
+        #mytime{
+            background: #000;
+            color: #FFF;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
+    <h1 id="mytime">
+
+    </h1>
     <script type="text/javascript">
         setInterval(function() {
             let date = new Date();
@@ -18,6 +28,7 @@
             var time = year+ '-' +month + '-' +day+ ' ' +hours+ ':' +minutes+ ':' +seconds;
 
             document.title = time;
+            document.getElementById('mytime').innerHTML = time;
         },1000)
     </script>
 </body>
