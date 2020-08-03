@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS中Prompt提示框的使用</title>
+</head>
+<body>
+    <img src="" id="img">
+    <script>
+        var img = document.getElementById('img');
+        var text = prompt('请输入文字');
+
+        switch(text) {
+            case '1': 
+                img.src = 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1596468347548&di=9aee46da7b336e0d8c2164325a8258ea&imgtype=0&src=http%3A%2F%2Fpic1.win4000.com%2Fwallpaper%2F6%2F537ea15ed93fa.jpg';
+                break;
+            case '2': 
+                img.src = 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1596468347546&di=4b4a121e8fab07b5f632984bd7e19d4a&imgtype=0&src=http%3A%2F%2Fattach.bbs.miui.com%2Fforum%2F201408%2F24%2F150506tvs8u3iwomt3m4db.jpg';
+                break;
+        }
+
+    </script>
+</body>
+</html>
