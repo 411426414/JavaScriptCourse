@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS中随机切换图片技术</title>
+</head>
+<body>
+    <img src="" id="img">
+    <script>
+        function selectimg() {
+            var a = 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1596468787942&di=8d351ac25f707e65c30ee25a73d6f0d7&imgtype=0&src=http%3A%2F%2Fimg.bihuaku.com%2Ftuku%2Fyulantu%2F110111%2F292-11011104113886.jpg';
+            var b = 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1596468815128&di=9014af04aec246f4d36fa86fad1f879a&imgtype=0&src=http%3A%2F%2Fimg0.imgtn.bdimg.com%2Fit%2Fu%3D3844245515%2C2852118203%26fm%3D214%26gp%3D0.jpg';
+            var c = 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1596468787940&di=cff9b643facd858ad5ecfef74fd1f58f&imgtype=0&src=http%3A%2F%2Fimg.ewebweb.com%2Fuploads%2F20190623%2F20%2F1561294316-GJictyjPXW.jpg';
+            var d = 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1596468787938&di=b14da3fb4b055d0cb167e77989cc4cde&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201505%2F18%2F20150518020947_Wn5xf.jpeg';
+            var e = 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1596468787937&di=130dc5265d83e282103f836a8ac7d559&imgtype=0&src=http%3A%2F%2Fpic30.nipic.com%2F20130604%2F12345262_113529571143_2.jpg';
+            arr = [a,b,c,d,e];
+            var key = Math.floor(Math.random() * arr.length);
+            var val = arr[key];
+            img = document.getElementById('img');
+            img.src = val;
+        }
+        setInterval(selectimg,1000)
+    </script>
+</body>
+</html>
