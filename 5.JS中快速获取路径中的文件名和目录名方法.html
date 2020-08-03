@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS中快速获取路径中的文件名和目录名方法</title>
+</head>
+<body>
+    <script>
+        var name = 'www/web/index.php';
+        var indexOf = name.indexOf('/');//获取第一个匹配字符的索引值
+        var pos = name.lastIndexOf('/');//获取最后一个匹配字符的索引值
+        var fileName = name.substr(pos + 1) //获取文件名
+        var dirName = name.substr(0, pos) //获取目录名
+
+        document.write('文件相对路径：' + name + '<br />');
+        document.write('文 件 名 称：' + fileName + '<br />');
+        document.write('文 件 路 径：' + dirName + '<br />');
+    </script>
+</body>
+</html>
