@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS中如何给元素绑定事件</title>
+</head>
+<body>
+    
+    <h1 id="hid">标题一</h1>
+    <h2>标题二</h2>
+
+    <script>
+        let hobj = document.getElementById('hid');
+
+        hobj.onclick = function(){
+            this.style.background = 'red';
+        }
+    </script>
+</body>
+</html>
