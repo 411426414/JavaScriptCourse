@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS中去除左右空格方法</title>
+</head>
+<body>
+    <script>
+        name = '  linux          ';
+        function trim(str) {
+            return str.replace(/(^\s*)|(\s*$)/g, '');
+        }
+        alert(trim(name));
+    </script>
+</body>
+</html>
