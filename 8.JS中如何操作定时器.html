@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS中如何操作定时器</title>
+</head>
+<body>
+    <button id="start">start</button>
+    <button id="stop">stop</button>
+    <script>
+        let i = 0;
+
+        function start(){
+            sobj = setInterval(function(){
+                document.title = ++i;
+            },100);
+        }
+
+        start();
+
+        function stop(){
+            clearInterval(sobj)
+        }
+
+        startBtn = document.getElementById('start')
+        stopBtn = document.getElementById('stop')
+
+        startBtn.onclick = function(){
+            start();
+        }
+        
+        stopBtn.onclick = function(){
+            stop();
+        }
+    </script>
+</body>
+</html>
