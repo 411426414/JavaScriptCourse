@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS中鼠标弹起特效</title>
+  <style>
+    #img{
+      width: 200px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  验证码:<input type="text" id="input" alt="自动转换为小写">
+  <script>
+    let input = document.getElementById('input')
+    input.onkeyup = function () {
+			this.value = this.value.toLowerCase()
+			// this.value = this.value.toUpperCase()
+		}
+  </script>
+</body>
+</html>
