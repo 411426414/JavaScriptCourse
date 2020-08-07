@@ -15,3 +15,9 @@
 7. document.getElementById('')
 8. document.getElementsByClassName('')
 9. document.getElementsByTagName('')
+
+##### 二、获取屏幕的高度
+1. 文档的高
+2. 可视区域的高
+3. 总高度
+4. 滚动的高
