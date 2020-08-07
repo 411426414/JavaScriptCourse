@@ -21,3 +21,18 @@
 2. 可视区域的高
 3. 总高度
 4. 滚动的高
+
+##### 三、事件对象
+
+1. onclick
+2. ondblclick
+3. onmouseenter
+4. onmouseleave
+5. onmousemove
+6. onkeydown
+7. onkeyup
+8. onkeypress
+9. onfocus
+10. onblur
+11. onsubmit
+12. onreset
