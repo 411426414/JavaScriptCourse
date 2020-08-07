@@ -43,3 +43,9 @@
 17. onload
 18. onerror
 19. oncontextmenu
+
+##### 四、浏览器默认行为
+
+1. 超链接
+2. 表单
+3. 右键菜单
