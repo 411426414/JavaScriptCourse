@@ -36,3 +36,10 @@
 10. onblur
 11. onsubmit
 12. onreset
+13. onchange
+14. onselect
+15. onscroll
+16. onresize
+17. onload
+18. onerror
+19. oncontextmenu
