@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS中右键菜单制作特效</title>
+    <style type="text/css">
+        #menu{
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        ul{
+            list-style: none;
+            margin: 0;
+            padding: 15px;
+            border: 1px solid #272822;
+        }
+        a{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="menu">
+        <ul>
+            <li><a href="https://www.baidu.com/" target="_blank">百度一下</a></li>
+            <li><a href="https://www.bilibili.com/" target="_blank">哔哩哔哩</a></li>
+        </ul>
+    </div>
+    <script type="text/javascript">
+        let menu = document.getElementById('menu')
+        document.oncontextmenu = function (event){
+            let x = event.clientX;
+            let y = event.clientY;
+
+            menu.style.left = x + 'px';
+            menu.style.top = y + 'px';
+            menu.style.display = 'inline';
+
+            return false
+        }
+    </script>
+</body>
+</html>
