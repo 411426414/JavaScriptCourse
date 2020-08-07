@@ -14,11 +14,15 @@
         ul{
             list-style: none;
             margin: 0;
-            padding: 15px;
+            padding: 5px;
             border: 1px solid #272822;
         }
         a{
             text-decoration: none;
+            color: black;
+        }
+        li{
+            border-bottom: 1px solid black ;
         }
     </style>
 </head>
@@ -26,7 +30,7 @@
     <div id="menu">
         <ul>
             <li><a href="https://www.baidu.com/" target="_blank">百度一下</a></li>
-            <li><a href="https://www.bilibili.com/" target="_blank">哔哩哔哩</a></li>
+            <li><a href="https://www.bilibicom/" target="_blank">哔哩哔哩</a></li>
         </ul>
     </div>
     <script type="text/javascript">
@@ -34,13 +38,16 @@
         document.oncontextmenu = function (event){
             let x = event.clientX;
             let y = event.clientY;
-
-            menu.style.left = x + 'px';
-            menu.style.top = y + 'px';
+            menu.style.left = x + 15 + 'px';
+            menu.style.top = y + 15 + 'px';
             menu.style.display = 'inline';
 
             return false
         }
+        menu.onclick = function (){
+            this.style.display = 'none';
+        }
+        
     </script>
 </body>
 </html>
