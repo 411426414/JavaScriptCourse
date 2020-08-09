@@ -12,10 +12,10 @@
             background-color: #ddd;
         }
         #progress{
-            width: 1%;
+            width: 100%;
             height: 28px;
             margin-top: 1px;
-            background-color: #aaf;
+            background-color: #FAA;
         }
     </style>
 </head>
@@ -26,17 +26,18 @@
     <button id="btn">开始</button>
 
     <script type="text/javascript">
-        let pro = 0;
-        let v = 5;
+        let pro = 100;
+        let v = -5;
         let btn = document.getElementById('btn');
         let progress = document.getElementById('progress');
         btn.onclick = function () {
             let time = setInterval(function () {
                 pro += v;
-                if (pro >= 25){
-                    v = 1;
+                if (pro <= 35){
+                    v = -1;
+                    progress.style.background = '#F55';
                 }
-                if (pro >= 100){
+                if (pro <= 0){
                     clearInterval(time)
                 }
                 progress.style.width = pro + '%';

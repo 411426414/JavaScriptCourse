@@ -16,7 +16,7 @@
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
-    <select/>
+    <select />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="45e69d5b-4efd-468b-a449-d53c720fc717" name="Default Changelist" comment="" />
@@ -64,6 +64,7 @@
       <workItem from="1596709229112" duration="143000" />
       <workItem from="1596717842073" duration="26000" />
       <workItem from="1596799886344" duration="3651000" />
+      <workItem from="1596957688935" duration="1419000" />
     </task>
     <servers />
   </component>
