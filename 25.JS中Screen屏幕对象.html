@@ -1,11 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS中Screen屏幕对象</title>
+    <link rel="stylesheet" href="" id="css">
+    <script type="text/javascript">
+        let x = screen.width;
+        let y = screen.height;
+        let main = document.getElementById('main');
+        let css = document.getElementById('css');
+        // function small() {
+        //     // main.css({'width': '500px', 'background-color': '#FAA', 'margin': '0 auto'})
+        //     main.style.width = '500px';
+        //     main.style.background = '#FAA';
+        //     main.style.margin = '0 auto'
+        // }
+        // function big() {
+        //     // main.css({'width': '900px','background-color': '#AAF','margin': '0 auto'})
+        //     main.style.width = '500px';
+        //     main.style.background = '#AAF';
+        //     main.style.margin = '0 auto'
+        // }
+
+        switch (x){
+            case 1024:
+                css.href = ''
+                break;
+            case 1536:
+                css.href = ''
+                break;
+        }
+    </script>
 </head>
 <body>
-    
+    <div id="main">
+        <h1>01</h1>
+        <h1>02</h1>
+        <h1>03</h1>
+        <h1>04</h1>
+        <h1>05</h1>
+    </div>
 </body>
 </html>
