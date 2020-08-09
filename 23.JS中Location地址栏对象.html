@@ -4,8 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS中Location地址栏对象</title>
+    <style type="text/css">
+        #main {
+            position: absolute;
+            top: 0;
+            left: 0;
+            cursor: pointer;
+        }
+        img{
+            width: 250px;
+            height: 186px;
+            display: block;
+        }
+    </style>
 </head>
 <body>
-    
+    <div id="main">
+        <img id="img" alt src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1124544175,2329514836&fm=26&gp=0.jpg">
+    </div>
+    <script type="text/javascript">
+        let main = document.getElementById('main')
+        main.onclick = function(){
+            location.href = 'https://www.baidu.com/';
+        }
+    </script>
 </body>
 </html>
