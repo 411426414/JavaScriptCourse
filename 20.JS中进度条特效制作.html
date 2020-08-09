@@ -1,11 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS中进度条特效制作</title>
+    <style>
+        #main{
+            width: 100%;
+            height: 30px;
+            overflow: hidden;
+            background-color: #ddd;
+        }
+        #progress{
+            width: 1%;
+            height: 28px;
+            margin-top: 1px;
+            background-color: #aaf;
+        }
+    </style>
 </head>
 <body>
-    
+    <div id="main">
+        <div id="progress"></div>
+    </div>
+    <button id="btn">开始</button>
+
+    <script type="text/javascript">
+        let pro = 0;
+        let v = 5;
+        let btn = document.getElementById('btn');
+        let progress = document.getElementById('progress');
+        btn.onclick = function () {
+            let time = setInterval(function () {
+                pro += v;
+                if (pro >= 25){
+                    v = 1;
+                }
+                if (pro >= 100){
+                    clearInterval(time)
+                }
+                progress.style.width = pro + '%';
+            },100);
+        }
+    </script>
 </body>
 </html>
