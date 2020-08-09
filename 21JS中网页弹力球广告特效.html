@@ -13,6 +13,7 @@
             position: absolute;
             top: 0;
             left: 0;
+            cursor: pointer;
         }
         img{
             width: 250px;
@@ -23,7 +24,9 @@
 </head>
 <body>
     <div id="main">
-        <img id="img" src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1124544175,2329514836&fm=26&gp=0.jpg">
+        <a href="http://www.baidu.com" target="_blank">
+            <img id="img" src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1124544175,2329514836&fm=26&gp=0.jpg">
+        </a>
     </div>
     <script type="text/javascript">
         let sx = 0;
@@ -35,32 +38,42 @@
         let main = document.getElementById('main');
         let winh = document.documentElement.clientHeight;
         let winw = document.documentElement.clientWidth;
-        setInterval(function () {
-            sy += vy;
-            sx += vx;
+        let obj = null
+        start()
+        function start() {
+             obj = setInterval(function () {
+                sy += vy;
+                sx += vx;
 
-            // y轴
-            if (sy <= 0){
-                vy = 1
-            }
-            if (sy >= winh - imgh){
-                vy = -1
-                sy = winh - imgh
-            }
+                // y轴
+                if (sy <= 0){
+                    vy = -vy
+                }
+                if (sy >= winh - imgh){
+                    vy = -vy
+                    sy = winh - imgh
+                }
 
-            // x轴
-            if (sx <= 0){
-                vx = 1
-            }
+                // x轴
+                if (sx <= 0){
+                    vx = -vx
+                }
+                if (sx >= winw - imgw){
+                    vx = -vx
+                    sx = winw - imgw
+                }
 
-            if (sx >= winw - imgw){
-                vx = -1
-                sx = winw - imgw
-            }
+                main.style.top = sy + 'px'
+                main.style.left = sx + 'px'
+            })
+        }
 
-            main.style.top = sy + 'px'
-            main.style.left = sx + 'px'
-        })
+        main.onmouseenter = function () {
+            clearInterval(obj)
+        }
+        main.onmouseleave = function () {
+            start()
+        }
     </script>
 </body>
 </html>
