@@ -4,6 +4,8 @@
 
 ### [2.JS中Confirm确认框的使用.html](https://411426414.github.io/JavaScriptCourse/2.JS中Confirm确认框的使用.html)
 
+### [3.JS中Prompt提示框的使用.html](https://411426414.github.io/JavaScriptCourse/3.JS中Prompt提示框的使用.html)
+
 
 ##### 一、获取浏览器对象
 1. window
