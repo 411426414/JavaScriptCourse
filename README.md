@@ -10,6 +10,8 @@
 
 ### [5.JS中快速获取路径中的文件名和目录名方法.html](https://411426414.github.io/JavaScriptCourse/5.JS中快速获取路径中的文件名和目录名方法.html)
 
+### [6.JS中去除左右空格方法.html](https://411426414.github.io/JavaScriptCourse/6.JS中去除左右空格方法.html)
+
 ##### 一、获取浏览器对象
 1. window
 2. document
