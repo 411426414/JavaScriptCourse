@@ -16,6 +16,8 @@
 
 ### [8.JS中如何操作定时器.html](https://411426414.github.io/JavaScriptCourse/8.JS中如何操作定时器.html)
 
+### [9.JS中超时器的使用.html](https://411426414.github.io/JavaScriptCourse/9.JS中超时器的使用.html)
+
 ##### 一、获取浏览器对象
 1. window
 2. document
