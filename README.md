@@ -22,6 +22,8 @@
 
 ### [11.JS中与特效有关的四个高度.html](https://411426414.github.io/JavaScriptCourse/11.JS中与特效有关的四个高度.html)
 
+### [12.JS中如何给元素绑定事件.html](https://411426414.github.io/JavaScriptCourse/12.JS中如何给元素绑定事件.html)
+
 ##### 一、获取浏览器对象
 1. window
 2. document
