@@ -18,6 +18,8 @@
 
 ### [9.JS中超时器的使用.html](https://411426414.github.io/JavaScriptCourse/9.JS中超时器的使用.html)
 
+### [10.JS中实现倒计时页面跳转效果.html](https://411426414.github.io/JavaScriptCourse/10.JS中实现倒计时页面跳转效果.html)
+
 ##### 一、获取浏览器对象
 1. window
 2. document
