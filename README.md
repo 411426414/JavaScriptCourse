@@ -12,6 +12,8 @@
 
 ### [6.JS中去除左右空格方法.html](https://411426414.github.io/JavaScriptCourse/6.JS中去除左右空格方法.html)
 
+### [7.JS中如何进行数组排序.html](https://411426414.github.io/JavaScriptCourse/7.JS中如何进行数组排序.html)
+
 ##### 一、获取浏览器对象
 1. window
 2. document
