@@ -6,6 +6,7 @@
 
 ### [3.JS中Prompt提示框的使用.html](https://411426414.github.io/JavaScriptCourse/3.JS中Prompt提示框的使用.html)
 
+### [4.JS中随机切换图片技术.html](https://411426414.github.io/JavaScriptCourse/4.JS中随机切换图片技术.html)
 
 ##### 一、获取浏览器对象
 1. window
