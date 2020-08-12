@@ -1,11 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS中Window窗口对象</title>
 </head>
 <body>
-    
+    <button id="btn">打开新窗口</button>
+    <button id="red" style="background-color: red">red</button>
+    <button id="green" style="background-color: green">green</button>
+    <button id="blue" style="background-color: blue">blue</button>
+    <script type="text/javascript">
+        let btn = document.getElementById('btn');
+        let newWin;
+        btn.onclick = function () {
+            newWin = window.open();
+            newWin.onload = function(){
+                newWin.document.body.style.background = '#AAF'
+            }
+        }
+    </script>
 </body>
 </html>
