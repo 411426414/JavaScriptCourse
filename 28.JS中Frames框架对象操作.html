@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS中Frames框架对象操作</title>
 </head>
-<body>
-    
-</body>
+<frameset rows="50, *">
+    <frame src="https://www.baidu.com/">
+    <frameset cols="100, *">
+        <frame src="https://www.baidu.com/" noresize="1"><!--noresize:防止拖动-->
+        <frame src="https://github.com/">
+    </frameset>
+</frameset>
 </html>
