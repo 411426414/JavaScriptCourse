@@ -21,6 +21,10 @@
     <script type="text/javascript">
         let btn = document.getElementById('btn');
         let newWin;
+
+        let parentWin = window.opener;//找到打开这个页面的浏览器窗口
+
+
         btn.onclick = function () {
             newWin = window.open();
             // newWin.onload = function(){
