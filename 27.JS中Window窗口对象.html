@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS中Window窗口对象</title>
+    <style>
+        button {
+            border-width: 0;
+            width: 150px;
+            height: 30px;
+        }
+    </style>
 </head>
 <body>
     <button id="btn">打开新窗口</button>
@@ -15,9 +22,18 @@
         let newWin;
         btn.onclick = function () {
             newWin = window.open();
-            newWin.onload = function(){
-                newWin.document.body.style.background = '#AAF'
-            }
+            // newWin.onload = function(){
+            //     newWin.document.body.style.background = '#AAF'
+            // }
+        }
+        document.getElementById('red').onclick = function () {
+            newWin.document.body.style.background = 'red';
+        }
+        document.getElementById('green').onclick = function () {
+            newWin.document.body.style.background = 'green';
+        }
+        document.getElementById('blue').onclick = function () {
+            newWin.document.body.style.background = 'blue';
         }
     </script>
 </body>
