@@ -1,11 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS如何精确判断浏览器类型</title>
 </head>
 <body>
-    
+    <script type="text/javascript">
+        let info = navigator.userAgent;// 浏览器内核
+
+        console.log(info);
+
+        let type = ''
+
+        if (info.search(/firefox/i) >= 0){
+            type = 'firefox';
+            document.body.style.background = '#FAA';
+        }else if (info.search(/msie/i) >= 0){
+            type = 'ie';
+            document.body.style.background = '#AFA';
+        }else if (info.search(/chrome/i) >= 0){
+            type = 'Chrome'
+            document.body.style.background = '#AAF';
+        }
+
+        console.log(type);
+    </script>
 </body>
 </html>
