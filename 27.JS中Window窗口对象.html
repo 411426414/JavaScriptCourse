@@ -14,6 +14,7 @@
 </head>
 <body>
     <button id="btn">打开新窗口</button>
+    <button id="full">打开新窗口-全屏</button>
     <button id="red" style="background-color: red">red</button>
     <button id="green" style="background-color: green">green</button>
     <button id="blue" style="background-color: blue">blue</button>
@@ -25,6 +26,10 @@
             // newWin.onload = function(){
             //     newWin.document.body.style.background = '#AAF'
             // }
+        }
+        // IE浏览器全屏-只有通过Alt+F4关闭
+        document.getElementById('full').onclick = function () {
+            newWin = window.open('','','fullscreen=1');
         }
         document.getElementById('red').onclick = function () {
             newWin.document.body.style.background = 'red';
