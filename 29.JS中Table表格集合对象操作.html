@@ -1,11 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS中Table表格集合对象操作</title>
 </head>
 <body>
-    
+    <h3>用户表</h3>
+    <table width='500px' border='1px' cellspacing='0' id="tid">
+        <tr>
+            <td>姓名</td>
+            <td>年龄</td>
+            <td>性别</td>
+        </tr>
+    </table>
+    <script type="text/javascript">
+        let tid = document.getElementById('tid');
+        let row = tid.insertRow(1);
+
+        row.innerHTML = '<td>小明</td><td>18</td><td>男</td>'
+    </script>
 </body>
 </html>
