@@ -8,14 +8,18 @@
 <body>
     <form action="">
         <select name="" id="select">
-            <option value="">user1</option>
-            <option value="">user2</option>
-            <option value="">user3</option>
+            <option value="" class="opt">user1</option>
+            <option value="" class="opt">user2</option>
+            <option value="" class="opt">user3</option>
         </select>
     </form>
     <script type="text/javascript">
-        let select = document.getElementById('select');
-        let options = select.options;
+        // 通过节点找option
+        let forms = document.forms;//找到form表单
+        let eles = forms[0].elements;//找到元素节点
+        let options = eles[0].options//找到option
+
+
         alert(options.length)
     </script>
 </body>
