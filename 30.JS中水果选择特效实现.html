@@ -15,10 +15,13 @@
     </form>
     <script type="text/javascript">
         // 通过节点找option
-        let forms = document.forms;//找到form表单
-        let eles = forms[0].elements;//找到元素节点
-        let options = eles[0].options//找到option
+        // let forms = document.forms;//找到form表单
+        // let eles = forms[0].elements;//找到元素节点
+        // let options = eles[0].options//找到option
 
+        // 通过ID名找option
+        let select = document.getElementById('select');
+        let options = select.options;
 
         alert(options.length)
     </script>
