@@ -18,7 +18,12 @@
         let tid = document.getElementById('tid');
         let row = tid.insertRow(1);
 
-        row.innerHTML = '<td>小明</td><td>18</td><td>男</td>'
+        row.insertCell(0).innerHTML = '小明'
+        row.insertCell(1).innerHTML = '21'
+        row.insertCell(2).innerHTML = '女'
+
+
+        // row.innerHTML = '<td>小明</td><td>18</td><td>男</td>'
     </script>
 </body>
 </html>
