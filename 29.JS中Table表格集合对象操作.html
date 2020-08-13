@@ -23,8 +23,13 @@
         row.insertCell(2).innerHTML = '女'
 
 
-        alert(tid.rows[0].cells[0].innerHTML)
-        
+        // alert(tid.rows[0].cells[0].innerHTML)  //获取指定单元格的值
+
+
+        // 统计表格的行数，列数
+        alert(tid.rows.length + '行')
+        alert(tid.rows[0].cells.length + '列')
+
         // row.innerHTML = '<td>小明</td><td>18</td><td>男</td>'
     </script>
 </body>
