@@ -26,6 +26,9 @@
 
 ### [13.JS中鼠标移入和移出特效.html](https://411426414.github.io/JavaScriptCourse/13.JS中鼠标移入和移出特效.html)
 
+### [14.JS中集合操作特效.html](https://411426414.github.io/JavaScriptCourse/14.JS中集合操作特效.html)
+
+
 ##### 一、获取浏览器对象
 1. window
 2. document
