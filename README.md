@@ -38,7 +38,7 @@
 
 ### [19.JS中右键菜单制作特效.html](https://411426414.github.io/JavaScriptCourse/19.JS中右键菜单制作特效.html)
 
-### [20.JS中网页弹力球广告特效.html](https://411426414.github.io/JavaScriptCourse/20.JS中网页弹力球广告特效.html)
+### [20.JS中进度条特效制作.html](https://411426414.github.io/JavaScriptCourse/20.JS中进度条特效制作.html)
 
 ##### 一、获取浏览器对象
 1. window
