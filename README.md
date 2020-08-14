@@ -32,6 +32,7 @@
 
 ### [16.JS中鼠标移动特效.html](https://411426414.github.io/JavaScriptCourse/16.JS中鼠标移动特效.html)
 
+### [17.JS中鼠标弹起特效.html](https://411426414.github.io/JavaScriptCourse/17.JS中鼠标弹起特效.html)
 
 ##### 一、获取浏览器对象
 1. window
