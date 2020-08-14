@@ -40,6 +40,8 @@
 
 ### [20.JS中进度条特效制作.html](https://411426414.github.io/JavaScriptCourse/20.JS中进度条特效制作.html)
 
+### [21.JS中网页弹力球广告特效.html](https://411426414.github.io/JavaScriptCourse/21.JS中网页弹力球广告特效.html)
+
 ##### 一、获取浏览器对象
 1. window
 2. document
