@@ -46,6 +46,8 @@
 
 ### [23.JS中Location地址栏对象.html](https://411426414.github.io/JavaScriptCourse/23.JS中Location地址栏对象.html)
 
+### [24.JS中History历史对象.html](https://411426414.github.io/JavaScriptCourse/24.JS中History历史对象.html)
+
 ##### 一、获取浏览器对象
 1. window
 2. document
