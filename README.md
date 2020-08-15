@@ -42,6 +42,8 @@
 
 ### [21.JS中网页弹力球广告特效.html](https://411426414.github.io/JavaScriptCourse/21.JS中网页弹力球广告特效.html)
 
+### [22.JS中游戏控制特效.html](https://411426414.github.io/JavaScriptCourse/22.JS中游戏控制特效.html)
+
 ##### 一、获取浏览器对象
 1. window
 2. document
