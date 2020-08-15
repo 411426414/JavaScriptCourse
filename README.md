@@ -56,6 +56,8 @@
 
 ### [28.JS中Frames框架对象操作.html](https://411426414.github.io/JavaScriptCourse/28.JS中Frames框架对象操作.html)
 
+### [29.JS中Table表格集合对象操作.html](https://411426414.github.io/JavaScriptCourse/29.JS中Table表格集合对象操作.html)
+
 ##### 一、获取浏览器对象
 1. window
 2. document
