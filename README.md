@@ -46,7 +46,7 @@
 
 ### [23.JS中Location地址栏对象.html](https://411426414.github.io/JavaScriptCourse/23.JS中Location地址栏对象.html)
 
-### [24.JS中History历史对象.html](https://411426414.github.io/JavaScriptCourse/24.JS中History历史对象.html)、
+### [24.JS中History历史对象.html](https://411426414.github.io/JavaScriptCourse/24.JS中History历史对象.html)
 
 ### [25.JS中Screen屏幕对象.html](https://411426414.github.io/JavaScriptCourse/25.JS中Screen屏幕对象.html)
 
