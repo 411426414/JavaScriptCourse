@@ -50,6 +50,8 @@
 
 ### [25.JS中Screen屏幕对象.html](https://411426414.github.io/JavaScriptCourse/25.JS中Screen屏幕对象.html)
 
+### [26.JS如何精确判断浏览器类型.html](https://411426414.github.io/JavaScriptCourse/26.JS如何精确判断浏览器类型.html)
+
 ##### 一、获取浏览器对象
 1. window
 2. document
