@@ -52,6 +52,8 @@
 
 ### [26.JS如何精确判断浏览器类型.html](https://411426414.github.io/JavaScriptCourse/26.JS如何精确判断浏览器类型.html)
 
+### [27.JS中Window窗口对象.html](https://411426414.github.io/JavaScriptCourse/27.JS中Window窗口对象.html)
+
 ##### 一、获取浏览器对象
 1. window
 2. document
