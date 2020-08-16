@@ -62,6 +62,8 @@
 
 ### [31.S中Ajax实现完整的用户无刷新删除实验.html](https://411426414.github.io/JavaScriptCourse/31.S中Ajax实现完整的用户无刷新删除实验.html)
 
+### [32.Jquery点名器实战.html](https://411426414.github.io/JavaScriptCourse/32.Jquery点名器实战.html)
+
 ##### 一、获取浏览器对象
 1. window
 2. document
