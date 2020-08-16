@@ -4,29 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS中水果选择特效实现</title>
+    <style>
+        select {
+            width: 100px;
+            height: 150px;
+        }
+    </style>
 </head>
 <body>
-    <form action="">
-        <select name="" id="select">
-            <option value="" class="opt">user1</option>
-            <option value="" class="opt">user2</option>
-            <option value="" class="opt">user3</option>
+    <form>
+        <select size="10" id="S1">
+            <option value="苹果" class="opt">苹果</option>
+            <option value="香蕉" class="opt">香蕉</option>
+            <option value="橘子" class="opt">橘子</option>
+            <option value="西瓜" class="opt">西瓜</option>
+            <option value="葡萄" class="opt">葡萄</option>
+            <option value="南瓜" class="opt">南瓜</option>
+        </select>
+        <button id="btn">&raquo;</button>
+        <select size="10" id="S2">
+
         </select>
     </form>
     <script type="text/javascript">
-        // 通过节点找option
-        // let forms = document.forms;//找到form表单
-        // let eles = forms[0].elements;//找到元素节点
-        // let options = eles[0].options//找到option
-
-        // 通过ID名找option
-        // let select = document.getElementById('select');
-        // let options = select.options;
-
-        // 通过class类名找option
-        let options = document.getElementsByClassName('opt');
-
-        alert(options.length)
+        let btn = document.getElementById('btn');
+        let S1 = document.getElementById('S1');
+        let S2 = document.getElementById('S2');
+        btn.onclick = function() {
+            let index = S1.selectedIndex;
+            if (index >= 0){
+                S2.add(S1.options[index]);
+            }else{
+                alert('请选择水果');
+            }
+        }
     </script>
 </body>
 </html>
