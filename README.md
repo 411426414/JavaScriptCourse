@@ -64,6 +64,8 @@
 
 ### [32.Jquery点名器实战.html](https://411426414.github.io/JavaScriptCourse/32.Jquery点名器实战.html)
 
+### [33.JS幻灯片实现.html](https://411426414.github.io/JavaScriptCourse/33.JS幻灯片实现.html)
+
 ##### 一、获取浏览器对象
 1. window
 2. document
