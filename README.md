@@ -68,6 +68,10 @@
 
 ### [34.京东左侧滚动监听特效.html](https://411426414.github.io/JavaScriptCourse/34.京东左侧滚动监听特效.html)
 
+### [35.通过节点、ID、class寻找节点.html](https://411426414.github.io/JavaScriptCourse/35.通过节点、ID、class寻找节点.html)
+
+
+
 ##### 一、获取浏览器对象
 1. window
 2. document
