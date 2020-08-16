@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>通过节点、ID、class寻找节点</title>
+</head>
+<body>
+    <form action="">
+        <select name="" id="select">
+            <option value="" class="opt">user1</option>
+            <option value="" class="opt">user2</option>
+            <option value="" class="opt">user3</option>
+        </select>
+    </form>
+    <script type="text/javascript">
+        // 通过节点找option
+        // let forms = document.forms;//找到form表单
+        // let eles = forms[0].elements;//找到元素节点
+        // let options = eles[0].options//找到option
+
+        // 通过ID名找option
+        // let select = document.getElementById('select');
+        // let options = select.options;
+
+        // 通过class类名找option
+        let options = document.getElementsByClassName('opt');
+
+        alert(options.length)
+    </script>
+</body>
+</html>
