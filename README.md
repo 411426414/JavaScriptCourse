@@ -60,6 +60,8 @@
 
 ### [30.JS中水果选择特效实现.html](https://411426414.github.io/JavaScriptCourse/30.JS中水果选择特效实现.html)
 
+### [31.S中Ajax实现完整的用户无刷新删除实验.html](https://411426414.github.io/JavaScriptCourse/31.S中Ajax实现完整的用户无刷新删除实验.html)
+
 ##### 一、获取浏览器对象
 1. window
 2. document
