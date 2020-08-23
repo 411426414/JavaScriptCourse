@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>let变量的声明以及声明特性</title>
+</head>
+<body>
+    <script type="text/javascript">
+        // 声明变量
+        let a;// 声明单个变量
+        let b,c,d;// 声明多个变量
+        let f = 'hello js', g = [], h = {}; // 声明变量赋初值
+
+        // 1.变量不能重复声明
+        let star = 'String';
+        // let star = 'a'; //Uncaught SyntaxError: Identifier 'star' has already been declared
+
+        // 2.块级作用域  es5：全局，函数，eval(严格模式)
+        // 块级作用域：if else while for
+        // {
+        //     // var blockScope = '没有块级作用域';
+        //     let blockScope1 = '块级作用域';
+        // }
+        // console.log(blockScope)
+
+        // 3.不存在变量提升
+        // console.log(song);
+        // let song = '唱歌';// var 声明变量会赋一个初始值undefined，
+
+        // 4.不影响作用域链
+        {
+            let s = '123';
+            function fn(){
+                console.log(s);
+            }
+            fn()
+        }
+    </script>
+</body>
+</html>
