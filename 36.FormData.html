@@ -28,6 +28,9 @@
             console.log('username' + fd.get('username'))
 
             console.log(fd.has('password'))
+
+            fd.delete('password')
+            console.log('password:' + fd.get('password'))
         }
     </script>
 </body>
