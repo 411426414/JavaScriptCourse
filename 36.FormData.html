@@ -17,7 +17,11 @@
             password = document.getElementById('password'),
             Btn = document.getElementById('Btn');
         var fd = new FormData();
-        
+        Btn.onclick = function(){
+            fd.append('username',username.value);
+            fd.append('password',password.value);
+
+        }
     </script>
 </body>
 
