@@ -51,6 +51,15 @@
         console.log(typeof a === 'boolean')
         a = null;
         console.log(typeof a, a === null)
+
+        // 2.对象
+        var object1 = {
+            object2: [1, 'string', console.log],
+            object3: function(){
+                console.log(object3)
+            }
+        }
+        console.log(object1 instanceof Object)
     </script>
 </body>
 
