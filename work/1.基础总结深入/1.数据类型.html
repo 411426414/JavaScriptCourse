@@ -22,8 +22,10 @@
                 Array：一种特别的对象(数值下标，内部数据是有序的)
         2.判断
             typeof：返回数据类型的字符串表达
+                可以判断：undefined
             instanceof：判断对象的具体类型
             ===
+                可以判断：undefined
     -->
     <script type="text/javascript">
         var obj = {
@@ -36,6 +38,11 @@
         }
 
         var arr=[];
+
+        // 1.基本数据
+        var a;
+        console.log(a, typeof a, typeof a === 'undefined')
+        console.log(undefined === 'undefined')
     </script>
 </body>
 
