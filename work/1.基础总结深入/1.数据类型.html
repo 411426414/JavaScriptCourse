@@ -56,9 +56,9 @@
         var object1 = {
             object2: [1, 'string', console.log],
             object3: function(){
-                console.log(object3)
+                // console.log('object3')
                 return function(){
-                    return '1234567';
+                    return 'zj'
                 }
             }
         }
@@ -67,7 +67,7 @@
         console.log(object1.object3 instanceof Function,object1.object3 instanceof Object)
         console.log(typeof object1.object3 === 'function') 
         console.log(object1.object2[2],typeof object1.object2[2] === 'function' )
-        
+        console.log(object1.object3()())    //输出对象里的函数返回一个函数值
     </script>
 </body>
 
