@@ -57,13 +57,17 @@
             object2: [1, 'string', console.log],
             object3: function(){
                 console.log(object3)
+                return function(){
+                    return '1234567';
+                }
             }
         }
         console.log(object1 instanceof Object,object1 instanceof Array)
         console.log(object1.object2 instanceof Array,object1.object2 instanceof Object)
         console.log(object1.object3 instanceof Function,object1.object3 instanceof Object)
         console.log(typeof object1.object3 === 'function') 
-        console.log(object1.object2[2],typeof object1.object2[2] === 'function' );
+        console.log(object1.object2[2],typeof object1.object2[2] === 'function' )
+        
     </script>
 </body>
 
